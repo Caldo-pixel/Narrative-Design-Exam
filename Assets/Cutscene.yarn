@@ -1,0 +1,328 @@
+title: Cutscene
+tags:
+position: -87,-323
+---
+Bill and Bob arrive at Hectic Hospital and make their way inside to start their first day on the job.
+They immediately notice the pristine condition of the reception area followed by an intense wave of cleaning chemical scents.
+
+<<reg_dialogue_start Manager>>
+Bob: Wow. This place is spotless! How can they keep it this clean?
+
+Bill: I have no idea.
+Bill: Man, I'm so excited to finally start helping people!
+
+Bob: Yeah, me too.
+<<reg_dialogue_end Manager>>
+
+Once inside they head towards the front desk where there is an attendant reading a book.
+
+<<reg_dialogue_start Manager>>
+Bill: Hi. We're both just starting here today.
+Bill: Could you help us figure out where exactly we need to go?
+<<reg_dialogue_end Manager>>
+
+The attendant completely ignores the question and continues reading their book.
+
+-> Ask again
+    <<jump Happy1>> 
+-> Wait for the attendant to respond
+    <<jump Angry1>>
+===
+
+title: Happy1
+position: -354,-47
+---
+<<reg_dialogue_start Manager>>
+Bill: Excuse me. Could you please help us?
+<<reg_dialogue_end Manager>>
+
+The attendant points towards a door to the right without taking their eyes off the page they're reading.
+
+<<reg_dialogue_start Manager>>
+Bill: Um... thanks.
+<<reg_dialogue_end Manager>>
+
+Bill and bob walk over to the door.
+
+<<reg_dialogue_start Manager>>
+Bob: That was strange.
+
+Bill: Yeah I guess they're just having a bad day.
+<<reg_dialogue_end Manager>>
+
+<<meet1 Manager>>
+
+When they walk through the door they see a man yelling at two hospital workers.
+
+<<reg_dialogue_start Manager>>
+Man: How many times do I need to tell you? That's not how we do things here!
+Man: Now get out of here!
+<<reg_dialogue_end Manager>>
+
+The workers walk away crying.
+
+<<meet2 Manager>>
+
+Bill and Bob look at eachother concerned.
+The man  turns around to see Bill an Bob and he immediately changes his mood.
+
+<<reg_dialogue_start Manager>>
+Man: Oh, you two must be the new guys. I'm Gerald and I'm in charge here at Hectic Hospital.
+Gerald: Let me show you two around.
+<<reg_dialogue_end Manager>>
+
+Gerald Leads Bill an Bob into another room.
+
+<<main1 Manager>>
+
+As soon as they enter they see uncleaned tools scattered across the room as well as patches of dried blood along the floor.
+It looks more like a torture room than a hospital room.
+
+<<reg_dialogue_start Manager>>
+Gerald: Don't worry about the mess. That's pretty normal around here.
+Gerald: You see, here at Hectic Hospital we get a lot of patients so we can't do everything that other hospitals might see as necessary.
+<<reg_dialogue_end Manager>>
+
+Gerald makes a half hearted face of dissapointment.
+Bill and Bob look around the messy room feeling a little uncomfortable.
+
+-> But, we can't give patients inadequite care.
+    <<jump Middle>>
+-> Are you sure that's alright?
+    <<jump Happy2>>
+===
+
+title: Happy2
+position: -506,196
+---
+Gerald walks over and pats Bill on the back.
+Bill stumbles slightly, not expecting the heavy pat from Gerald.
+
+<<reg_dialogue_start Manager>>
+Gerald: Of course. If there was anything wrong with how I run things here, this place would have been shut down years ago.
+
+Bob: I guess he has a point there.
+
+Gerald: Hahaha. That's right.
+Gerald: If you two listen to me you'll do well here. If not, well...
+<<reg_dialogue_end Manager>>
+
+Gerald shrugs.
+
+<<reg_dialogue_start Manager>>
+Gerald: Now, do you think you two are up to the task?
+<<reg_dialogue_end Manager>>
+
+-> Yeah, I guess so.
+    <<jump Happy3>>
+-> No, we can't do this.
+    <<jump Angry3>>
+===
+
+title: Happy3
+position: -505,445
+---
+Gerald claps a single time.
+
+<<main3 Manager>>
+
+<<reg_dialogue_start Manager>>
+Gerald: Alright. Feel free to check if everything you need is here.
+<<reg_dialogue_end Manager>>
+
+Bill and Bob walk around the room making sure they have everything they need.
+
+<<reg_dialogue_start Manager>>
+Bob: Well, it looks like everything is here.
+
+Bill: But, I don't know if we can even use any of this.
+Bill: None of these tools look like they've been cleaned in days.
+<<reg_dialogue_end Manager>>
+
+Gerald lets out a light chuckle.
+
+<<reg_dialogue_start Manager>>
+Gerald: Come on. Don't exaggerate.
+Gerald: These tools have been serving patients just fine.
+Gerald: Alright, time to get to work.
+<<reg_dialogue_end Manager>>
+
+-> We can't work in these conditions!
+    <<jump EndAngry>>
+-> ...Alright...
+    <<jump EndHappy>>
+===
+
+title: Angry1
+position: 188,-49
+---
+Bill and Bob wait for the attendant to respond.
+After around a minute of waiting, a man pushes through a door to their right.
+
+<<rec2 Manager>>
+
+<<angry_dialogue_start Manager>>
+Man: Hey! You two!
+<<angry_dialogue_end Manager>>
+
+Bill and Bob look at eachother slightly confused.
+
+<<reg_dialogue_start Manager>>
+Bill and Bob: Us?
+
+Man: Yes. I'm guessing you're the new guys.
+
+Bob: Yep.
+
+Man: Then why are you two just standing around out here?
+
+Bill: Well, we tried asking the attendant here for some help but...
+<<reg_dialogue_end Manager>>
+
+All three of them turn to look at the front desk to see that nobody is sitting there.
+
+<<reg_dialogue_start Manager>>
+Bill: Huh? Where did they go?
+<<reg_dialogue_end Manager>>
+
+The man looks at Bill and Bob with a slightly annoyed face.
+
+<<reg_dialogue_start Manager>>
+Man: Whatever. I'm Gerald and I run this place. Follow me.
+<<reg_dialogue_end Manager>>
+
+Gerald Leads Bill an Bob into another room.
+
+<<main1 Manager>>
+
+As soon as they enter they see uncleaned tools scattered across the room as well as patches of dried blood along the floor.
+it looks more like a torture room than a hospital room.
+
+<<reg_dialogue_start Manager>>
+Gerald: Hey, don't look so worried guys. It's usually pretty messy in these rooms.
+Gerald: You see, here at Hectic Hospital we get a lot of patients and we don't have time to clean things up very well.
+<<reg_dialogue_end Manager>>
+
+Gerald makes a half hearted face of dissapointment.
+Bill and Bob look around the messy room feeling a little uncomfortable.
+
+-> Really? This is how Hectic Hospital works?
+    <<jump Middle>>
+-> You can't be serious. That's horrible.
+    <<jump Angry2>>
+===
+
+title: Angry2
+position: 313,196
+---
+Gerald switches to a more serious tone.
+
+<<main2 Manager>>
+
+<<angry_dialogue_start Manager>>
+Gerald: Listen to me. I know what I'm doing.
+Gerald: I've been running this place for longer than you two have been alive.
+Gerald: You two better start listening or you won't have a great time here.
+<<angry_dialogue_end Manager>>
+
+Bill and Bob both have nervous look on their faces.
+
+<<reg_dialogue_start Manager>>
+Gerald: So, are you ready to listen?
+<<reg_dialogue_end Manager>>
+
+-> No, this isn't right!
+    <<jump Angry3>>
+-> Sure.
+    <<jump Happy3>>
+===
+
+title: Angry3
+position: 316,450
+---
+Gerald's expression changes and he begins to look very annoyed.
+
+<<main2 Manager>>
+
+<<angry_dialogue_start Manager>>
+Gerald: I'm in charge and you'll do what I tell you to do!
+<<angry_dialogue_end Manager>>
+
+Bill and Bob are shocked by the sudden outburst.
+
+<<angry_dialogue_start Manager>>
+Gerald: Do you understand?
+<<angry_dialogue_end Manager>>
+
+-> Woah, this isn't how things should work.
+    <<jump EndAngry>>
+-> ...Yes...
+    <<jump EndHappy>>
+===
+
+title: Middle
+position: -104,200
+---
+<<reg_dialogue_start Manager>>
+Gerald: Don't worry about it. You two will get the hang of this place.
+Gerald: This place has been the most popular hospital in the whole city for as long as I can remember.
+Gerald: We must be doing something right.
+<<reg_dialogue_end Manager>>
+
+Gerald has a small smirk on his face.
+
+<<reg_dialogue_start Manager>>
+Bill: Are there even any other hospitals in this city?
+
+Gerald: That's not important.
+Gerald: Now, are you two ready to officially get started?
+<<reg_dialogue_end Manager>>
+
+-> I don't know. This doesn't seem right.
+    <<jump Angry3>>
+-> Sure.
+    <<jump Happy3>>
+===
+
+title: EndAngry
+position: 114,712
+---
+<<angry_dialogue_start Manager>>
+Gerald: Whatever. See how long you last here with all the complaining.
+<<angry_dialogue_end Manager>>
+
+Gerald Walks out of the room without another word.
+
+<<main4 Manager>>
+
+Bob looks at Bill with a face of disgust mixed with fear.
+
+<<reg_dialogue_start Manager>>
+Bill: That guy is weird.
+
+Bob: Yeah...
+
+Bill: What did we just get ourselves into?
+<<reg_dialogue_end Manager>>
+===
+
+title: EndHappy
+position: -307,714
+---
+<<reg_dialogue_start Manager>>
+Gerald: Good to hear.
+<<reg_dialogue_end Manager>>
+
+Gerald give a short wave, then leaves the room.
+
+<<main4 Manager>>
+
+Bill looks at Bob with a face of disgust mixed with concern.
+
+<<reg_dialogue_start Manager>>
+Bob: Are we really going to work like this?
+
+Bill: No. Gerald is doing a disservice to the people of this city.
+Bill: We need to give them the care the deserve.
+<<reg_dialogue_end Manager>>
+===
