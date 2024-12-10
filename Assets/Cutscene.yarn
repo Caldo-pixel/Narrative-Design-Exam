@@ -2,6 +2,9 @@ title: Cutscene
 tags:
 position: -87,-323
 ---
+<<wait  4>>
+//<<music_stop Manager>>
+
 Bill and Bob arrive at Hectic Hospital and make their way inside to start their first day on the job.
 They immediately notice the pristine condition of the reception area followed by an intense wave of cleaning chemical scents.
 
@@ -54,10 +57,10 @@ Bill: Yeah I guess they're just having a bad day.
 
 When they walk through the door they see a man yelling at two hospital workers.
 
-<<reg_dialogue_start Manager>>
+<<angry_dialogue_start Manager>>
 Man: How many times do I need to tell you? That's not how we do things here!
 Man: Now get out of here!
-<<reg_dialogue_end Manager>>
+<<angry_dialogue_end Manager>>
 
 The workers walk away crying.
 
@@ -287,6 +290,8 @@ Gerald: Now, are you two ready to officially get started?
 title: EndAngry
 position: 114,712
 ---
+<<main2 Manager>>
+
 <<angry_dialogue_start Manager>>
 Gerald: Whatever. See how long you last here with all the complaining.
 <<angry_dialogue_end Manager>>
@@ -309,6 +314,8 @@ Bill: What did we just get ourselves into?
 title: EndHappy
 position: -307,714
 ---
+<<main3 Manager>>
+
 <<reg_dialogue_start Manager>>
 Gerald: Good to hear.
 <<reg_dialogue_end Manager>>

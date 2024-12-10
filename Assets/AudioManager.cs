@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource regularDialogue;
     public AudioSource angryDialogue;
+    public AudioSource music;
 
     public GameObject bgArt1;
     public GameObject bgArt2;
@@ -27,6 +28,10 @@ public class AudioManager : MonoBehaviour
         bgArt6.SetActive(false);
         bgArt7.SetActive(false);
         bgArt8.SetActive(false);
+
+        music.loop = true;
+        music.volume = 0.1f;
+        music.Play();
     }
 
     // Update is called once per frame
@@ -34,6 +39,12 @@ public class AudioManager : MonoBehaviour
     {
         
     }
+
+    /*[YarnCommand("music_stop")]
+    public void musicStop()
+    {
+        music.Stop();
+    }*/
 
     [YarnCommand("reg_dialogue_start")]
     public void regDialogueStart()
